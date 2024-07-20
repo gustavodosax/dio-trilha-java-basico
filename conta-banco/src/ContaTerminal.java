@@ -33,6 +33,7 @@ public class ContaTerminal {
         scanner.close();
 
         conta1.sacarSaldo(sacar);
+        conta1.saldoAtual(sacar);
                         
     }
 }

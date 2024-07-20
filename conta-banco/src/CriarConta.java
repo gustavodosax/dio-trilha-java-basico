@@ -52,14 +52,19 @@ public class CriarConta {
             return saldo;
         }
         else {
-        saldo-= - sacar;
+        
         System.out.println("Sacando saldo....");
         System.out.println("Saldo sacado com sucesso!");
-        System.out.println("Você sacou: " + sacar);
-        System.out.println("Seu saldo atual é: " + saldo);      
+        System.out.println("Você sacou: " + sacar);         
         return saldo;
 
         }
+    }
+
+    public double saldoAtual(double sacar) {
+        saldo-= sacar;
+        System.out.println("Seu saldo atual é: " + saldo);
+        return saldo;
     }
     
 }
